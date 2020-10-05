@@ -21,11 +21,6 @@ const Process = props => {
         subtitle="Frontend: React, React Native, Typescript, Graphql, Apollo, Material-Ui, D3.js, Jest, Javascript, PHP, HTML, CSS"
         subtitle2="Backend: NodeJS, Express, GraphQL, Apollo, Knex, REST, Jest Testing, Python"
         subtitle3="Architecture: AWS Amplify, AWS Elastic BeanStalk, PostgreSQL, MySQL"
-        ctaGroup={[
-          <Button variant="contained" color="primary" size="large">
-            Contact us
-          </Button>,
-        ]}
         disableGutter
         data-aos="fade-up"
       />
