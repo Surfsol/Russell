@@ -178,9 +178,9 @@ const Agency = () => {
           />
         </div>
       </Parallax>
-      <Section id="agency-reviews">
+      {/* <Section id="agency-reviews">
         <Reviews data={reviews} />
-      </Section>
+      </Section> */}
       <Divider />
       <Section>
         <Contact />

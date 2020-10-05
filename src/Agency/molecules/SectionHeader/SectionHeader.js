@@ -37,7 +37,10 @@ const SectionHeader = props => {
     titleVariant,
     subtitleVariant,
     subtitle,
+    subtitle2,
+    subtitle3,
     subtitleColor,
+    textAdd,
     label,
     overline,
     fadeUp,
@@ -112,6 +115,21 @@ const SectionHeader = props => {
           {title}
         </Typography>
       </Grid>
+      <Grid item xs={12} className="section-header__title-wrapper">
+        <Typography
+          variant={"h3"}
+          align={align || 'center'}
+          className={clsx(
+           'section-header__title',
+            classes.title,
+           titleClasses ? titleClasses : {},
+          )}
+          color="textPrimary"
+          {...titleProps}
+        >
+          {textAdd}
+        </Typography>
+      </Grid>
       {subtitle && (
         <Grid item xs={12} className="section-header__subtitle-wrapper">
           <Typography
@@ -122,6 +140,32 @@ const SectionHeader = props => {
             {...subtitleProps}
           >
             {subtitle}
+          </Typography>
+        </Grid>
+      )}
+      {subtitle2 && (
+        <Grid item xs={12} className="section-header__subtitle-wrapper">
+          <Typography
+            variant={subtitleVariant || 'h6'}
+            align={align || 'center'}
+            color={subtitleColor || 'textSecondary'}
+            className="section-header__subtitle"
+            {...subtitleProps}
+          >
+            {subtitle2}
+          </Typography>
+        </Grid>
+      )}
+      {subtitle3 && (
+        <Grid item xs={12} className="section-header__subtitle-wrapper">
+          <Typography
+            variant={subtitleVariant || 'h6'}
+            align={align || 'center'}
+            color={subtitleColor || 'textSecondary'}
+            className="section-header__subtitle"
+            {...subtitleProps}
+          >
+            {subtitle3}
           </Typography>
         </Grid>
       )}

@@ -16,9 +16,11 @@ const Process = props => {
   return (
     <div className={clsx('jarallax', classes.root, className)} {...rest}>
       <SectionHeader
-        title="Our process"
+        title="Tecnologies"
         titleVariant="h2"
-        subtitle="We are a small agency of talented designers & developers. Unlike teams from big agencies, we will treat your project as ours. We will walk you through our smooth and simple process."
+        subtitle="Frontend: React, React Native, Typescript, Graphql, Apollo, Material-Ui, D3.js, Jest, Javascript, PHP, HTML, CSS"
+        subtitle2="Backend: NodeJS, Express, GraphQL, Apollo, Knex, REST, Jest Testing, Python"
+        subtitle3="Architecture: AWS Amplify, AWS Elastic BeanStalk, PostgreSQL, MySQL"
         ctaGroup={[
           <Button variant="contained" color="primary" size="large">
             Contact us
