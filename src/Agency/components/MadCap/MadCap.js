@@ -1,19 +1,19 @@
-import React from 'react';
-import clsx from 'clsx';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
-import  SectionHeader  from '../../molecules/SectionHeader/SectionHeader';
+import React from "react";
+import clsx from "clsx";
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import { Button } from "@material-ui/core";
+import SectionHeader from "../../molecules/SectionHeader/SectionHeader";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {},
   textWhite: {
-    color: 'white',
-    textTransform: 'uppercase',
+    color: "white",
+    textTransform: "uppercase",
   },
 }));
 
-const MadCap = props => {
+const MadCap = (props) => {
   const { className, ...rest } = props;
   const classes = useStyles();
 
@@ -22,12 +22,6 @@ const MadCap = props => {
       <SectionHeader
         title={<span className={classes.textWhite}>FullStack Developer</span>}
         titleVariant="h1"
-        subtitle={<span className={classes.textWhite}>The coffee company</span>}
-        ctaGroup={[
-          <Button variant="outlined" color="secondary" size="large">
-            See portfolio
-          </Button>,
-        ]}
         disableGutter
         data-aos="fade-up"
       />

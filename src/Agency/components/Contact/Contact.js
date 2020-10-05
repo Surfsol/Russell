@@ -1,27 +1,33 @@
-import React from 'react';
-import clsx from 'clsx';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
-import  SectionHeader  from '../../molecules/SectionHeader/SectionHeader';
+import React from "react";
+import clsx from "clsx";
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import { Button } from "@material-ui/core";
+import SectionHeader from "../../molecules/SectionHeader/SectionHeader";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {},
 }));
 
-const Contact = props => {
+const Contact = (props) => {
   const { className, ...rest } = props;
   const classes = useStyles();
 
+  const github = "https://github.com/surfsol";
+  const linkedIn = "https://www.linkedin.com/in/russell-terry-dev";
+
   return (
-    <div className={clsx('jarallax', classes.root, className)} {...rest}>
+    <div className={clsx("jarallax", classes.root, className)} {...rest}>
       <SectionHeader
-        title="Have a project to discuss?"
-        subtitle="We work on everything from physical products to digital experiences and are looking forward to hearing from you."
+        title="Get in touch"
+        subtitle="Email: surfsol@protonmail.com"
         ctaGroup={[
-          <Button variant="contained" color="primary" size="large">
-            Contact us
-          </Button>,
+          <a href={github} target="_blank">
+            GITHUB
+          </a>,
+          <a href={linkedIn} target="_blank">
+            LINKEDIN
+          </a>,
         ]}
         data-aos="fade-up"
       />

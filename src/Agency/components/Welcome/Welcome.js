@@ -16,12 +16,13 @@ const Welcome = props => {
   return (
     <div className={clsx('jarallax', classes.root, className)} {...rest}>
       <SectionHeader
-        title="We craft beautiful websites and digital products."
+        title="Russell Terry"
+        textAdd="Crafting modern web applications."
         titleVariant="h2"
-        subtitle="We design, develop and launch websites and products for startups, companies and ourselves."
+        subtitle="FullStack Web Developer"
         ctaGroup={[
           <Button variant="contained" color="primary" size="large">
-            Contact us
+            Contact me
           </Button>,
         ]}
         disableGutter

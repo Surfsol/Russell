@@ -9,7 +9,7 @@ import MadCap from "./components/MadCap/MadCap";
 import Parallax from "./organisms/Parallax/Parallax";
 
 import Process from "./components/Process/Process";
-import Adidas from "./components/Adidas/Adidas";
+import Sauti from "./components/Sauti/Sauti"
 import Larq from "./components/Larq/Larq";
 import Revitalized from "./components/Nike/Nike";
 import Contact from "./components/Contact/Contact";
@@ -127,7 +127,7 @@ const Agency = () => {
       >
         <div className={clsx(classes.fullHeight, classes.adidasSection)}>
           <Section>
-            <Adidas />
+            <Sauti />
           </Section>
           <IconAlternate
             shape="circle"
@@ -178,9 +178,9 @@ const Agency = () => {
           />
         </div>
       </Parallax>
-      <Section id="agency-reviews">
+      {/* <Section id="agency-reviews">
         <Reviews data={reviews} />
-      </Section>
+      </Section> */}
       <Divider />
       <Section>
         <Contact />
