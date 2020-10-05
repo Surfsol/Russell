@@ -10,7 +10,7 @@ const Back = ()=> {
 
     return (
         <>
-        <NavLink to='/projects'>
+        <NavLink to='/'>
         <img src={leftarrow} alt="back button" />
           </NavLink>
           

@@ -1,18 +1,18 @@
 import React from "react";
 import "../../../css/sauti.scss";
 
-import ag from "../../../images/projects/ag-grid-react.png"
+import ag from "../../../images/projects/ag-grid-react.png";
 import material from "../../../images/projects/material-ui.png";
 import graphql from "../../../images/projects/graphApollo.png";
 import react from "../../../images/projects/react.jpg";
 import sautiAccounts from "../../../images/projects/sautiAccounts1.png";
 import line from "../../../images/projects/sautiLine.png";
 import sautiDisplay from "../../../images/projects/sautiDisplay.png";
-import choropleth from '../../../images/projects/choropleth.png'
+import choropleth from "../../../images/projects/choropleth.png";
 
 import Backbutton from "../Backbutton";
 
-import d3 from '../../../icons/d3js.png'
+import d3 from "../../../icons/d3js.png";
 import aws from "../../../icons/aws-icon.png";
 import postgres from "../../../icons/post.png";
 import node from "../../../icons/nodejs.png";
@@ -28,19 +28,22 @@ const SautiSummary = () => {
 
           <h1>Sauti DataBank</h1>
         </div>
-        <div className="siteLink">
-          {" "}
-          <h2>
-            Site: databank.sautiafrica.org
-          </h2>
+        <div className="link">
+          <a
+            href="http://databank.sautiafrica.org/"
+            target="_blank"
+            className="button"
+          >
+            <h2> Sauti DataBank</h2>
+          </a>
         </div>
         <br></br>
         <div>
-          <div class="link">
+          <div className="link">
             <a
               href="https://github.com/Lambda-School-Labs/sauti-databank-fe"
               target="_blank"
-              class="button"
+              className="button"
             >
               <h2> Frontend Github Code</h2>
             </a>
@@ -48,7 +51,7 @@ const SautiSummary = () => {
             <a
               href="https://github.com/Lambda-School-Labs/sauti-databank-be"
               target="_blank"
-              class="button"
+              className="button"
             >
               <h2> Backend Github Code</h2>
             </a>
@@ -64,22 +67,22 @@ const SautiSummary = () => {
           </p>
         </div>
         <div className="sautiPhotos">
-          <div class="sautiPic">
+          <div className="sautiPic">
             <img src={sautiDisplay} />
           </div>
-          <div class="sautiPic">
+          <div className="sautiPic">
             <img src={line} />
           </div>
 
-          <div class="sautiPic">
+          <div className="sautiPic">
             <img src={sautiAccounts} />
           </div>
-          <div class="sautiPic">
+          <div className="sautiPic">
             <img src={choropleth} />
           </div>
         </div>
         <div className="sautitech">
-          <h1>Tech Stack:</h1>
+          <h1>Tech Stack</h1>
           <img className="techsUsed" src={react} />
           <h3>
             <span className="colorBlue">React</span>: When our team inherited
@@ -100,8 +103,9 @@ const SautiSummary = () => {
 
           <img className="techsUsed" src={d3} />
           <h3>
-            <span className="colorBlue">D3.js</span>: D3.js was used to make the choropleth
-            map.  Map and a legend of results are dynamically rendered to the screen.
+            <span className="colorBlue">D3.js</span>: D3.js was used to make the
+            choropleth map. Map and a legend of results are dynamically rendered
+            to the screen.
           </h3>
 
           <img className="techsUsed" src={ag} />
@@ -150,59 +154,93 @@ const SautiSummary = () => {
             Sauti is a non-profit organization that caters to cross-boarder
             traders who need assistance with current market prices,
             documentation and legal procedures.
-            <a href="http://sautiafrica.org/" target="_blank" class="button">
+            <a href="http://sautiafrica.org/" target="_blank" className="button">
               Sauti's informational site
             </a>
           </p>
           <br></br>
           <p>
-            The organization has been collecting data from informal trades
-            in Region of Africa known as Sauti since 2017. This data
-            is very valuable to Government officials, researchers and developers
-            for insight to market trends, pricing and trader demographics.
+            The organization has been collecting data from informal trades in
+            Region of Africa known as Sauti since 2017. This data is very
+            valuable to Government officials, researchers and developers for
+            insight to market trends, pricing and trader demographics.
           </p>
         </div>
         <div className="sautiProblem">
           <h1>Completed Tasks</h1>
           <br></br>
-         <ol>
-          
-           <li> A. Made the bar chart more dynamic by adding unlimited filtering options, a date
-            picker as well as fixing overlapping value displays.</li>
+          <ol>
+            <li>
+              {" "}
+              A. Made the bar chart more dynamic by adding unlimited filtering
+              options, a date picker as well as fixing overlapping value
+              displays.
+            </li>
             <br></br>
-            <li> B. In addition to the Bar Chart, the site needed other visual data displays:
-            a Choropleth Map was added using D3.js to make statistical discrepancies more profound.</li>
+            <li>
+              {" "}
+              B. In addition to the Bar Chart, the site needed other visual data
+              displays: a Choropleth Map was added using D3.js to make
+              statistical discrepancies more profound.
+            </li>
             <br></br>
-            <li> C. A Line Graph was added to show trends over time.  The data is normalized, and has an adjustable range slider.</li>
+            <li>
+              {" "}
+              C. A Line Graph was added to show trends over time. The data is
+              normalized, and has an adjustable range slider.
+            </li>
             <br></br>
-            <li>D. Incoming data also needed additional parsing do display all data points.  Data is received in PHP format, then
-            converted and parsed json format.  Parsing is done on a cron job.  Additional parsing enabled us to increase the database by 50%.</li>
+            <li>
+              D. Incoming data also needed additional parsing do display all
+              data points. Data is received in PHP format, then converted and
+              parsed json format. Parsing is done on a cron job. Additional
+              parsing enabled us to increase the database by 50%.
+            </li>
             <br></br>
-            <li>E. Sauti then decided to make this a standalone app, in which most of the data
-            would need to be accessed via a paywall.  So we needed to implement tiered access 
-            to certain types of data and filtering tools.  </li>
+            <li>
+              E. Sauti then decided to make this a standalone app, in which most
+              of the data would need to be accessed via a paywall. So we needed
+              to implement tiered access to certain types of data and filtering
+              tools.{" "}
+            </li>
             <br></br>
-            <li>F. Paypal was added implemented, and enables customers to pay monthly, quarterly or 
-              yearly.  Accounts are managed on a user Account page, enabling customers to 
-            buy, cancel and monitor their subscription.</li>
+            <li>
+              F. Paypal was added implemented, and enables customers to pay
+              monthly, quarterly or yearly. Accounts are managed on a user
+              Account page, enabling customers to buy, cancel and monitor their
+              subscription.
+            </li>
             <br></br>
-            <li>G. We added an administration page that enables the admin to monitor
-            and or perform crud operations on user accounts. The grid offers
-            easy filtering to quickly locate accounts.</li>
+            <li>
+              G. We added an administration page that enables the admin to
+              monitor and or perform crud operations on user accounts. The grid
+              offers easy filtering to quickly locate accounts.
+            </li>
             <br></br>
-            <li> H. Creating links to social media was also very important so the site could gain 
-            popularity. </li>
-            <br>
-            </br>
-            <li>I. Login and Register pages were created.  Giving user tiered access to certain features of the app.    </li>       
-          
-          <br></br>
-          <li> J. Testing using Jest for both frontend and backend components.</li>
+            <li>
+              {" "}
+              H. Creating links to social media was also very important so the
+              site could gain popularity.{" "}
+            </li>
             <br></br>
-           <li> k. The url is now corresponds to the selected filters so users can
-            share links and filtering can easily be reproduced. These links can
-            also be shared on twitter and facebook.</li>
-        </ol>
+            <li>
+              I. Login and Register pages were created. Giving user tiered
+              access to certain features of the app.{" "}
+            </li>
+
+            <br></br>
+            <li>
+              {" "}
+              J. Testing using Jest for both frontend and backend components.
+            </li>
+            <br></br>
+            <li>
+              {" "}
+              k. The url is now corresponds to the selected filters so users can
+              share links and filtering can easily be reproduced. These links
+              can also be shared on twitter and facebook.
+            </li>
+          </ol>
         </div>
       </section>
     </>
