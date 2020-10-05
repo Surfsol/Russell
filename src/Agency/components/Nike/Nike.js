@@ -13,16 +13,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Nike = props => {
+const Revitalized = props => {
   const { className, ...rest } = props;
   const classes = useStyles();
 
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        title={<span className={classes.textWhite}>Nike</span>}
+        title={<span className={classes.textWhite}>Revitalized</span>}
         titleVariant="h1"
-        subtitle={<span className={classes.textWhite}>just do it</span>}
+        subtitle={<span className={classes.textWhite}>Crowd Sourcing</span>}
         ctaGroup={[
           <Button variant="outlined" color="secondary" size="large">
             See portfolio
@@ -35,11 +35,11 @@ const Nike = props => {
   );
 };
 
-Nike.propTypes = {
+Revitalized.propTypes = {
   /**
    * External classes
    */
   className: PropTypes.string,
 };
 
-export default Nike;
+export default Revitalized;

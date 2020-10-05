@@ -20,11 +20,11 @@ const Adidas = props => {
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        title={<span className={classes.textWhite}>ADIDAS</span>}
+        title={<span className={classes.textWhite}>Sauti DataBank</span>}
         titleVariant="h1"
         subtitle={
           <span className={classes.textWhite}>
-            All Day I Dream About Sprort
+            Data Stats and Visualizations
           </span>
         }
         ctaGroup={[

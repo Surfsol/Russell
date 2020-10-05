@@ -11,7 +11,7 @@ import Parallax from "./organisms/Parallax/Parallax";
 import Process from "./components/Process/Process";
 import Adidas from "./components/Adidas/Adidas";
 import Larq from "./components/Larq/Larq";
-import Nike from "./components/Nike/Nike";
+import Revitalized from "./components/Nike/Nike";
 import Contact from "./components/Contact/Contact";
 import Reviews from "./components/Reviews/Reviews";
 
@@ -50,13 +50,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#0000008a",
   },
   adidasSection: {
-    backgroundColor: "#003c0580",
+    backgroundColor: "#3f0f3f80",
   },
   larqSection: {
-    backgroundColor: "#2d402f80",
+    backgroundColor: "#5f3f3f80",
   },
   nikeSection: {
-    backgroundColor: "#5f3f3f80",
+    backgroundColor: "#2d402f80",
   },
 }));
 
@@ -89,7 +89,7 @@ const Agency = () => {
         />
       </div>
       <Parallax
-        backgroundImage="/images/photos/blog/cover1.jpg"
+        backgroundImage="/images/photos/blog/fullstackimage.png"
         id="agency-madcap"
       >
         <div className={clsx(classes.fullHeight, classes.madcapSection)}>
@@ -122,7 +122,7 @@ const Agency = () => {
         />
       </div>
       <Parallax
-        backgroundImage="/images/photos/blog/cover2.jpg"
+        backgroundImage="/images/photos/blog/sautiline.png"
         id="agency-adidas"
       >
         <div className={clsx(classes.fullHeight, classes.adidasSection)}>
@@ -141,7 +141,7 @@ const Agency = () => {
         </div>
       </Parallax>
       <Parallax
-        backgroundImage="/images/photos/blog/cover4.jpg"
+        backgroundImage="/images/photos/blog/wellDoneLand.png"
         id="agency-larq"
       >
         <div className={clsx(classes.fullHeight, classes.larqSection)}>
@@ -160,12 +160,12 @@ const Agency = () => {
         </div>
       </Parallax>
       <Parallax
-        backgroundImage="/images/photos/blog/cover3.jpg"
+        backgroundImage="/images/photos/blog/revit.png"
         id="agency-nike"
       >
         <div className={clsx(classes.fullHeight, classes.nikeSection)}>
           <Section>
-            <Nike />
+            <Revitalized />
           </Section>
           <IconAlternate
             shape="circle"

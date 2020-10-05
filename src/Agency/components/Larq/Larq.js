@@ -20,9 +20,9 @@ const Larq = props => {
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        title={<span className={classes.textWhite}>LARQ</span>}
+        title={<span className={classes.textWhite}>WellDone</span>}
         titleVariant="h1"
-        subtitle={<span className={classes.textWhite}>Bottle redesigned</span>}
+        subtitle={<span className={classes.textWhite}>Well Pump Management Application</span>}
         ctaGroup={[
           <Button variant="outlined" color="secondary" size="large">
             See portfolio

@@ -20,7 +20,7 @@ const MadCap = props => {
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        title={<span className={classes.textWhite}>MAD CAP</span>}
+        title={<span className={classes.textWhite}>FullStack Developer</span>}
         titleVariant="h1"
         subtitle={<span className={classes.textWhite}>The coffee company</span>}
         ctaGroup={[
