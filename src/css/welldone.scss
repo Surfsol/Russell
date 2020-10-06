@@ -96,6 +96,7 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 3rem;
+    text-align: center;
     @media (max-width: $phone) {
       font-size: 2rem;
     }
@@ -158,6 +159,7 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 3rem;
+    text-align: center;
     @media (max-width: $phone) {
       font-size: 2rem;
     }
@@ -166,6 +168,7 @@ $sea3: #d6e6f3;
     width: 60%;
     margin: auto;
     font-size: 1.5rem;
+    text-align: center;
     @media (max-width: $phone) {
       font-size: 1.2rem;
     }
@@ -177,6 +180,7 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 3rem;
+    text-align: center;
   }
   ul {
     list-style-type: square;
@@ -199,6 +203,10 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 3rem;
+    text-align: center;
+  }
+  .techsUsed{
+    margin-left: 48%
   }
   h3 {
     width: 60%;

@@ -23,11 +23,7 @@ const Revitalized = props => {
         title={<span className={classes.textWhite}>Revitalized</span>}
         titleVariant="h1"
         subtitle={<span className={classes.textWhite}>Crowd Sourcing</span>}
-        ctaGroup={[
-          <Button variant="outlined" color="secondary" size="large">
-            See portfolio
-          </Button>,
-        ]}
+      
         disableGutter
         data-aos="fade-up"
       />

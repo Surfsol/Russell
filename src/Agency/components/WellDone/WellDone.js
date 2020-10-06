@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import  SectionHeader  from '../../molecules/SectionHeader/SectionHeader';
+import { NavLink } from "react-router-dom";
+
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -13,7 +15,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Larq = props => {
+const WellDone = props => {
   const { className, ...rest } = props;
   const classes = useStyles();
 
@@ -25,7 +27,9 @@ const Larq = props => {
         subtitle={<span className={classes.textWhite}>Well Pump Management Application</span>}
         ctaGroup={[
           <Button variant="outlined" color="secondary" size="large">
+          <NavLink variant="outlined" color="secondary" size="large" to={`/project/welldone`}>
             See portfolio
+          </NavLink>
           </Button>,
         ]}
         disableGutter
@@ -35,11 +39,11 @@ const Larq = props => {
   );
 };
 
-Larq.propTypes = {
+WellDone.propTypes = {
   /**
    * External classes
    */
   className: PropTypes.string,
 };
 
-export default Larq;
+export default WellDone;
