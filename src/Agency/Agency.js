@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#5f3f3f80",
   },
   nikeSection: {
-    backgroundColor: "#2d402f80",
+    backgroundColor: "#9d402f80",
   },
 }));
 
@@ -122,7 +122,7 @@ const Agency = () => {
         />
       </div>
       <Parallax
-        backgroundImage="/images/photos/blog/sautiline.png"
+        backgroundImage="/images/photos/blog/sautifig.png"
         id="agency-adidas"
       >
         <div className={clsx(classes.fullHeight, classes.adidasSection)}>
@@ -141,7 +141,7 @@ const Agency = () => {
         </div>
       </Parallax>
       <Parallax
-        backgroundImage="/images/photos/blog/wellDoneLand.png"
+        backgroundImage="/images/photos/blog/welldrop.png"
         id="agency-larq"
       >
         <div className={clsx(classes.fullHeight, classes.larqSection)}>

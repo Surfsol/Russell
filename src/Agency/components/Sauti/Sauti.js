@@ -30,9 +30,11 @@ const Sauti = props => {
           </span>
         }
         ctaGroup={[
+          <Button variant="outlined" color="secondary" size="large">
           <NavLink variant="outlined" color="secondary" size="large" to={`/project/sauti`}>
             See portfolio
-          </NavLink>,
+          </NavLink>
+          </Button>,
         ]}
         disableGutter
         data-aos="fade-up"
