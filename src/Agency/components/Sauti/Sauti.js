@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import  SectionHeader  from '../../molecules/SectionHeader/SectionHeader';
-import SautiSummary from '../Projects/SautiSummary'
 import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({

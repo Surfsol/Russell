@@ -13,6 +13,10 @@ const Welcome = props => {
   const { className, ...rest } = props;
   const classes = useStyles();
 
+  const github = "https://github.com/surfsol";
+  const linkedIn = "https://www.linkedin.com/in/russell-terry-dev";
+
+
   return (
     <div className={clsx('jarallax', classes.root, className)} {...rest}>
       <SectionHeader
@@ -20,10 +24,14 @@ const Welcome = props => {
         textAdd="Crafting modern web applications."
         titleVariant="h2"
         subtitle="FullStack Web Developer"
+        subtitle2="Email: surfsol@protonmail.com"
         ctaGroup={[
-          <Button variant="contained" color="primary" size="large">
-            Contact me
-          </Button>,
+          <a href={github} target="_blank">
+            GITHUB
+          </a>,
+          <a href={linkedIn} target="_blank">
+            LINKEDIN
+          </a>,
         ]}
         disableGutter
         data-aos="fade-up"

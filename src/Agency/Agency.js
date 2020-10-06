@@ -10,7 +10,7 @@ import Parallax from "./organisms/Parallax/Parallax";
 
 import Process from "./components/Process/Process";
 import Sauti from "./components/Sauti/Sauti"
-import Larq from "./components/Larq/Larq";
+import Well from "./components/WellDone/WellDone";
 import Revitalized from "./components/Nike/Nike";
 import Contact from "./components/Contact/Contact";
 import Reviews from "./components/Reviews/Reviews";
@@ -76,7 +76,8 @@ const Agency = () => {
   return (
     <div className={classes.root}>
       <div className={classes.fullHeight}>
-        <Section className={classes.disablePaddingTop}>
+        <Section className={classes.disablePaddingTop}
+        id="agency-welcome">
           <Welcome />
         </Section>
         <IconAlternate
@@ -146,7 +147,7 @@ const Agency = () => {
       >
         <div className={clsx(classes.fullHeight, classes.larqSection)}>
           <Section>
-            <Larq />
+            <Well />
           </Section>
           <IconAlternate
             shape="circle"
@@ -173,15 +174,16 @@ const Agency = () => {
             color={colors.amber}
             size="small"
             className={classes.scrollIcon}
-            onClick={() => scrollTo("agency-reviews")}
+            onClick={() => scrollTo("agency-contact")}
             data-aos="fade-up"
           />
         </div>
       </Parallax>
-      {/* <Section id="agency-reviews">
-        <Reviews data={reviews} />
-      </Section> */}
+      <Parallax
+        id="agency-contact"
+      >
       <Divider />
+      <div className={classes.fullHeight}>
       <Section>
         <Contact />
       </Section>
@@ -191,10 +193,12 @@ const Agency = () => {
         color={colors.amber}
         size="small"
         className={clsx(classes.scrollIcon, classes.scrollTopIcon)}
-        onClick={() => scrollTo("agency-madcap")}
+        onClick={() => scrollTo("agency-welcome")}
         data-aos="fade-up"
       />
       <Divider />
+      </div>
+      </Parallax>
     </div>
   );
 };
