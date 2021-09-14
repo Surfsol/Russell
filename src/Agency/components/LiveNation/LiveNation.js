@@ -13,31 +13,21 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Siingly = props => {
+const LiveNation = props => {
   const { className, ...rest } = props;
   const classes = useStyles();
 
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        title={<span className={classes.textWhite}>Siingly</span>}
+        title={<span className={classes.textWhite}>Live Nation</span>}
         titleVariant="h1"
         subtitle={
           <span className={classes.textWhite}>
-            React-Native Dating App
+            React-Native OTT app
           </span>
         }
-        ctaGroup={[
-          <Button variant="outlined" color="secondary" size="large">
-          <a
-            href="http://siingly.com/"
-            target="_blank"
-            className="button"
-          >
-            See Website
-          </a>
-          </Button>,
-        ]}
+        
         disableGutter
         data-aos="fade-up"
       />
@@ -45,4 +35,4 @@ const Siingly = props => {
   );
 };
 
-export default Siingly;
+export default LiveNation;
