@@ -142,6 +142,25 @@ const Agency = () => {
         </div>
       </Parallax>
       <Parallax
+        backgroundImage="/images/photos/blog/sautifig.png"
+        id="agency-adidas"
+      >
+        <div className={clsx(classes.fullHeight, classes.adidasSection)}>
+          <Section>
+            <Sauti />
+          </Section>
+          <IconAlternate
+            shape="circle"
+            fontIconClass="fas fa-chevron-down"
+            color={colors.amber}
+            size="small"
+            className={classes.scrollIcon}
+            onClick={() => scrollTo("agency-larq")}
+            data-aos="fade-up"
+          />
+        </div>
+      </Parallax>
+      <Parallax
         backgroundImage="/images/photos/blog/welldrop.png"
         id="agency-larq"
       >
