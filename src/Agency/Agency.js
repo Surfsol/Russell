@@ -7,9 +7,10 @@ import Section from "./organisms/Section/Section";
 import Welcome from "./components/Welcome/Welcome";
 import MadCap from "./components/MadCap/MadCap";
 import Parallax from "./organisms/Parallax/Parallax";
-
 import Process from "./components/Process/Process";
 import Sauti from "./components/Sauti/Sauti"
+import Siingly from "./components/Siingly/Siingly"
+import LiveNation from "./components/LiveNation/LiveNation"
 import Well from "./components/WellDone/WellDone";
 import Revitalized from "./components/Nike/Nike";
 import Contact from "./components/Contact/Contact";
@@ -47,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   madcapSection: {
+    backgroundColor: "#0000008a",
+  },
+  siinglySection: {
     backgroundColor: "#0000008a",
   },
   adidasSection: {
@@ -118,13 +122,51 @@ const Agency = () => {
           color={colors.amber}
           size="small"
           className={classes.scrollIcon}
-          onClick={() => scrollTo("agency-adidas")}
+          onClick={() => scrollTo("liveNation")}
           data-aos="fade-up"
         />
       </div>
       <Parallax
+        backgroundImage="/images/photos/blog/ott.png"
+        id="liveNation"
+      >
+        <div className={clsx(classes.fullHeight, classes.siinglySection)}>
+          <Section>
+            <LiveNation />
+          </Section>
+          <IconAlternate
+            shape="circle"
+            fontIconClass="fas fa-chevron-down"
+            color={colors.amber}
+            size="small"
+            className={classes.scrollIcon}
+            onClick={() => scrollTo("agency-siingly")}
+            data-aos="fade-up"
+          />
+        </div>
+      </Parallax>
+      <Parallax
+        backgroundImage="/images/photos/blog/siinglypics2.png"
+        id="agency-siingly"
+      >
+        <div className={clsx(classes.fullHeight, classes.siinglySection)}>
+          <Section>
+            <Siingly />
+          </Section>
+          <IconAlternate
+            shape="circle"
+            fontIconClass="fas fa-chevron-down"
+            color={colors.amber}
+            size="small"
+            className={classes.scrollIcon}
+            onClick={() => scrollTo("agency-sauti")}
+            data-aos="fade-up"
+          />
+        </div>
+      </Parallax>
+      <Parallax
         backgroundImage="/images/photos/blog/sautifig.png"
-        id="agency-adidas"
+        id="agency-sauti"
       >
         <div className={clsx(classes.fullHeight, classes.adidasSection)}>
           <Section>
